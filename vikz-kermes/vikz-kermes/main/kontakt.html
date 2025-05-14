@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIKZ Kermes - Kontakt</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .contact-container {
+            max-width: 600px;
+            margin: 0 auto;
+            height: auto;
+            flex: 0 0 auto;
+        }
+
+        main.container {
+            margin-bottom: 2rem;
+            height: auto;
+            flex: 0 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="language-switch">
+            <button class="language-btn active" onclick="switchLanguage('de')">DE</button>
+            <button class="language-btn" onclick="switchLanguage('tr')">TR</button>
+        </div>
+        <div class="container">
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="https://www.vikz.de/files/vikz/img_layout/vikz_logo_subline.svg" alt="VIKZ Logo">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container contact-container">
+            <div class="menu-item">
+                <h2 data-tr="contact-info">Kontaktinformationen</h2>
+                <div class="info-block">
+                    <h3 data-tr="address">Adresse</h3>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Herforder+Straße+107+33602+Bielefeld" 
+                       target="_blank" 
+                       class="address-link"
+                       title="In Google Maps öffnen">
+                        <p><i class="fas fa-map-marker-alt"></i> Herforder Straße 107</p>
+                        <p><i class="fas fa-city"></i> 33602 Bielefeld</p>
+                    </a>
+                </div>
+                <div class="info-block">
+                    <h3 data-tr="opening-hours">Öffnungszeiten</h3>
+                    <p data-tr="weekdays"><i class="far fa-clock"></i> Montag - Freitag: 10:00 - 22:00 Uhr</p>
+                    <p data-tr="weekend"><i class="far fa-clock"></i> Samstag - Sonntag: 10:00 - 23:00 Uhr</p>
+                </div>
+                <div class="info-block">
+                    <h3 data-tr="contact">Kontakt</h3>
+                    <p><i class="fas fa-phone"></i> Tel.: 0221/ 95 44 100</p>
+                    <p><i class="fas fa-envelope"></i> E-Mail: info@vikz.de</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p data-tr="copyright" class="copyright">© 2024 VIKZ Hayır Çarşısı. Alle Rechte vorbehalten.</p>
+            <p class="location">Süleymaniye Bielefeld</p>
+        </div>
+    </footer>
+
+    <script src="js/translations.js"></script>
+    <script>
+        function handleContactSubmit(event) {
+            event.preventDefault();
+            const lang = localStorage.getItem('preferred_language') || 'de';
+            document.getElementById('contactSuccess').style.display = 'block';
+            event.target.reset();
+            setTimeout(() => {
+                document.getElementById('contactSuccess').style.display = 'none';
+            }, 3000);
+        }
+    </script>
+</body>
+</html> 

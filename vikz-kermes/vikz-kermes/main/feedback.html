@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIKZ Kermes - Feedback</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="language-switch">
+            <button class="language-btn active" onclick="switchLanguage('de')">DE</button>
+            <button class="language-btn" onclick="switchLanguage('tr')">TR</button>
+        </div>
+        <div class="container">
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="https://www.vikz.de/files/vikz/img_layout/vikz_logo_subline.svg" alt="VIKZ Logo">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="feedback-section">
+            <h2 data-tr="feedback_title">Ihr Feedback</h2>
+            <p data-tr="feedback_desc">Teilen Sie uns Ihre Erfahrungen mit</p>
+            
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <h3>Feedback-Formular</h3>
+                    <form id="feedbackForm">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-Mail:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Ihre Nachricht:</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit">Absenden</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p data-tr="copyright" class="copyright">© 2024 VIKZ Hayır Çarşısı. Alle Rechte vorbehalten.</p>
+            <p class="location">Süleymaniye Bielefeld</p>
+        </div>
+    </footer>
+
+    <script src="js/translations.js"></script>
+</body>
+</html> 
