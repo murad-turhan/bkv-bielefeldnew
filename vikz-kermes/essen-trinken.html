@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIKZ Kermes - Essen & Trinken</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="language-switch">
+            <button class="language-btn active" onclick="switchLanguage('de')">DE</button>
+            <button class="language-btn" onclick="switchLanguage('tr')">TR</button>
+        </div>
+        <div class="container">
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="https://www.vikz.de/files/vikz/img_layout/vikz_logo_subline.svg" alt="VIKZ Logo">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="menu-section">
+            <h2 data-tr="menu_title">Speisekarte</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <h3>Döner</h3>
+                    <ul>
+                        <li>Döner im Brot - 6,00€</li>
+                        <li>Dürüm Döner - 6,50€</li>
+                        <li>Döner Box - 7,00€</li>
+                    </ul>
+                </div>
+                <div class="menu-item">
+                    <h3>Pide</h3>
+                    <ul>
+                        <li>Käse Pide - 6,00€</li>
+                        <li>Spinat Pide - 6,00€</li>
+                        <li>Hackfleisch Pide - 7,00€</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2 data-tr="drinks_title">Getränke</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <h3>Heiße Getränke</h3>
+                    <ul>
+                        <li>Türkischer Tee - 1,00€</li>
+                        <li>Türkischer Kaffee - 2,50€</li>
+                    </ul>
+                </div>
+                <div class="menu-item">
+                    <h3>Kalte Getränke</h3>
+                    <ul>
+                        <li>Ayran - 2,00€</li>
+                        <li>Cola/Fanta/Sprite - 2,50€</li>
+                        <li>Wasser - 1,50€</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="note" data-tr="prices_note">Alle Preise in Euro</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p data-tr="copyright" class="copyright">© 2024 VIKZ Hayır Çarşısı. Alle Rechte vorbehalten.</p>
+            <p class="location">Süleymaniye Bielefeld</p>
+        </div>
+    </footer>
+
+    <script src="js/translations.js"></script>
+</body>
+</html> 
